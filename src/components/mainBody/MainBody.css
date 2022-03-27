@@ -1,0 +1,149 @@
+.mainBody {
+  height: calc(100vh - 48px);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "sidebar main main main main main";
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#main {
+  grid-area: main;
+}
+
+/*            ============== Side Bar ================
+ */
+.sidebar {
+  background-color: var(--clr-sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+}
+.sidebarDivs:last-of-type {
+  flex-grow: 1;
+}
+
+.sidebarDivs {
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.sidebarDivs:first-of-type {
+  padding: 1.5rem 0.75rem;
+}
+
+.sidebarIcons {
+  width: 20px;
+  stroke: var(--clr-sidebar-icons) !important;
+}
+
+p {
+  color: var(--clr-black);
+  font-size: 0.875rem;
+}
+.bold {
+  font-weight: 600;
+}
+
+/*               ============ Main ============= 
+ */
+
+.main {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading styles */
+.mainHeading {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.headingUpper {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.heading {
+  margin-right: 8px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+.headingDots {
+  color: var(--clr-grey);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.headingDate {
+  font-size: 0.75rem;
+  font-weight: 200;
+  color: var(--clr-grey);
+}
+
+/* Input Form */
+.inputForm {
+  padding: 8px;
+  margin-bottom: 20px;
+  background-color: var(--clr-sidebar-bg);
+  border-radius: 4px;
+  border: 1px solid #edebe9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.formInput {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 12px;
+  appearance: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--clr-primary);
+}
+
+.formButton {
+  padding: 6px 20px;
+  border: none;
+  color: var(--clr-grey);
+  border-radius: 4px;
+}
+.formButton:hover {
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+  background-color: transparent;
+}
+.formButton:active {
+  background-color: #d0d0d7;
+}
+
+/* output table */
+.output {
+  margin: 0 16px;
+}
+table {
+  overflow: hidden;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+td {
+  padding: 8px 8px 8px 0;
+}
+.circleHover:hover {
+  cursor: pointer;
+}
+.linedTask {
+  text-decoration: line-through;
+}
+/* pending */
+/* completed */

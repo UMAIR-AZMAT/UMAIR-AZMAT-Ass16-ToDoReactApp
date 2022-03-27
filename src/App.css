@@ -1,0 +1,25 @@
+/* ========Reset============= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========Configs============= */
+:root {
+  --clr-primary: #0078d7;
+  --clr-black: #323130;
+  --clr-grey: #797775;
+  --clr-search: #c3ddf7;
+  --clr-icon-grey: #797775;
+  --clr-sidebar-bg: #f3f2f1;
+  --clr-sidebar-active: #ededed;
+  --clr-sidebar-focus: #fafafa;
+}
+
+.todoApp {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto";
+  /* layout */
+}
